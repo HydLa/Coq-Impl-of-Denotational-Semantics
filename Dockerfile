@@ -1,10 +1,8 @@
-FROM ubuntu
+FROM ubuntu:18.04
 
 # install opam
-RUN apt-get update \
-    && apt-get -y install opam m4
-RUN opam init -y \
-    && eval `opam config env`
+RUN apt-get update && apt-get -y install opam m4
+RUN opam init -y && eval `opam config env`
 
 # install coq
 RUN opam repo add coq-released https://coq.inria.fr/opam/released

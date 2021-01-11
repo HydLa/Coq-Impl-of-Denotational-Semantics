@@ -1,9 +1,13 @@
-# Coq Implementation of HydLa Semantics
+# Coq Implementation of Denotational Semantics
 
 ## Requirements
-Macでの動作を想定
+- Macでの動作を想定
+- make, docker, docker-compose, xquartzをインストール，設定
 
-make, docker, docker-compose, xquartz
+## Usage
+1. `make`でCoqIDEを起動
+1. File -> Openで適当なファイルを開く
+1. Compile -> Makeでコンパイル
 
 ## Files
 ### Util.v
@@ -27,5 +31,5 @@ make, docker, docker-compose, xquartz
 - set formulaの包含関係，constraintの包含関係・比較
 - 成立履歴 history := string -> option constraint
 
-### BouncingParticle.v
+### BouncingParticle.v, ParameterizedBouncingParticle.v
 - 解集合の計算
