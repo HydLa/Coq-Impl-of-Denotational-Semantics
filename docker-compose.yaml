@@ -1,0 +1,8 @@
+version: '3'
+services:
+  coq:
+    image: my-coq
+    container_name: coq
+    build: ./
+    volumes:
+      - ./src/:/work/
